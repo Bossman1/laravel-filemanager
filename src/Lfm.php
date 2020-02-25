@@ -186,6 +186,7 @@ class Lfm
      */
     public function translateFromUtf8($input)
     {
+        //test comment
         if ($this->isRunningOnWindows()) {
             $input = iconv('UTF-8', mb_detect_encoding($input), $input);
         }
